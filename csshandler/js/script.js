@@ -1,1 +1,0 @@
-$("*").fitText(6, { minFontSize: '10px' });
