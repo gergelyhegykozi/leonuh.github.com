@@ -99,7 +99,7 @@ h1 {
         }
 
         #content > section > div {
-            border: 1px solid #000; border-top: 0; background: rgba(255, 255, 255, .8); height: 240px; position: relative;  overflow: auto;
+            border: 1px solid #000; border-top: 0; background: rgba(255, 255, 255, .8); height: 240px; position: relative; overflow: visible;
             filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#CCFFFFFF,endColorstr=#CCFFFFFF);
             zoom: 1;
         }
