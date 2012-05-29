@@ -92,7 +92,11 @@ h1 {
             font-size: 2em; text-shadow: 1px 1px 0 #ccc;
         }
         #content > section > label:first-of-type { border-left: 1px solid #000; }
-        #content > section > label:hover { background: rgba(255, 255, 255, .8); }
+        #content > section > label:hover {
+            background: rgba(255, 255, 255, .8);
+            filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#CCFFFFFF,endColorstr=#CCFFFFFF);
+            zoom: 1;
+        }
 
         #content > section > div {
             border: 1px solid #000; border-top: 0; background: rgba(255, 255, 255, .8); height: 240px; position: relative;
