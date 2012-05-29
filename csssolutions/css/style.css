@@ -70,7 +70,7 @@ h1 {
 /* CONTENT */
 #content { padding: 1% 0; text-align: center; }
     #content > section {
-        background: rgba(0, 0, 0, .7); border-radius: 10px; display: inline-block;  margin: 0 0.2% 1% 0; padding: 10px; width: 32%; vertical-align: top;
+        background: rgba(0, 0, 0, .7); border-radius: 10px; display: inline-block;  margin: 0 0.2% 1% 0; padding: 10px; width: 31%; vertical-align: top;
         filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#B2000000,endColorstr=#B2000000);
         zoom: 1; *display: inline;
 
@@ -99,7 +99,7 @@ h1 {
         }
 
         #content > section > div {
-            border: 1px solid #000; border-top: 0; background: rgba(255, 255, 255, .8); height: 240px; position: relative;
+            border: 1px solid #000; border-top: 0; background: rgba(255, 255, 255, .8); height: 240px; position: relative;  overflow: auto;
             filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#CCFFFFFF,endColorstr=#CCFFFFFF);
             zoom: 1;
         }
@@ -119,12 +119,12 @@ h1 {
 
 /* LARGE MEDIA */
 @media screen and (max-width: 1300px) {
-    #content > section { width: 49%; }
+    #content > section { width: 45%; }
     #content > section:nth-of-type(3n) { margin-right: 0.2%; }
     #content > section:nth-of-type(2n) { margin-right: 0; }
 }
 
 /* MEDIUM MEDIA */
 @media screen and (max-width: 850px) {
-    #content > section { margin-right: 0; width: 98%; }
+    #content > section { margin-right: 0; width: 95%; }
 }
