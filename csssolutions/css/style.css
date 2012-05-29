@@ -119,12 +119,12 @@ h1 {
 
 /* LARGE MEDIA */
 @media screen and (max-width: 1300px) {
-    #content > section { width: 45%; }
+    #content > section { width: 50%; }
     #content > section:nth-of-type(3n) { margin-right: 0.2%; }
     #content > section:nth-of-type(2n) { margin-right: 0; }
 }
 
 /* MEDIUM MEDIA */
 @media screen and (max-width: 850px) {
-    #content > section { margin-right: 0; width: 95%; }
+    #content > section { margin-right: 0; width: 100%; }
 }
