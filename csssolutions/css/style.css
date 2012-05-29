@@ -72,7 +72,7 @@ h1 {
     #content > section {
         background: rgba(0, 0, 0, .7); border-radius: 10px; display: inline-block;  margin: 0 0.2% 1% 0; padding: 10px; width: 33%; vertical-align: top;
         filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#B2000000,endColorstr=#B2000000);
-        zoom: 1;
+        zoom: 1; *display: inline;
 
         text-align: left;
     }
@@ -87,7 +87,7 @@ h1 {
             border-bottom: 1px solid #000; border-right: 1px solid #000; border-top-left-radius: 5px; border-top-right-radius: 5px;
             cursor: pointer; display: inline-block; background: rgba(255, 255, 255, .5); padding: 10px;  transition: .5s all;
             filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7FFFFFFF,endColorstr=#7FFFFFFF);
-            zoom: 1;
+            zoom: 1; *display: inline;
 
             font-size: 2em; text-shadow: 1px 1px 0 #ccc;
         }
