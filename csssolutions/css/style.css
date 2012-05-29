@@ -119,7 +119,7 @@ h1 {
 
 /* LARGE MEDIA */
 @media screen and (max-width: 1300px) {
-    #content > section { width: 50%; }
+    #content > section { width: 49%; }
     #content > section:nth-of-type(3n) { margin-right: 0.2%; }
     #content > section:nth-of-type(2n) { margin-right: 0; }
 }
