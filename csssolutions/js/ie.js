@@ -437,7 +437,7 @@ window.matchMedia=window.matchMedia||(function(e,f){var c,a=e.documentElement,b=
     // --[ patchAttribute() ]-----------------------------------------------
     // returns a patch for an attribute selector.
     function patchAttribute( attr ) {
-        return (!BROKEN_ATTR_IMPLEMENTATIONS || BROKEN_ATTR_IMPLEMENTATIONS.test(attr)) ?
+        return (ieVersion==7 || !BROKEN_ATTR_IMPLEMENTATIONS || BROKEN_ATTR_IMPLEMENTATIONS.test(attr)) ?
         { className: createClassName(attr), applyClass: true } : null;
     };
 
