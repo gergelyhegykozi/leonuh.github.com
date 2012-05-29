@@ -82,10 +82,12 @@ h1 {
 
             color: #fff; font-size: 3em; text-shadow: 1px 1px 0 #000;
         }
-        #content > section > input { height: 0; overflow: hidden; width: 0; }
+        #content > section > input { height: 0; outline: none;  overflow: hidden; position: absolute; width: 0; }
         #content > section > label {
             border-bottom: 1px solid #000; border-right: 1px solid #000; border-top-left-radius: 5px; border-top-right-radius: 5px;
             cursor: pointer; display: inline-block; background: rgba(255, 255, 255, .5); padding: 10px;  transition: .5s all;
+            filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7FFFFFFF,endColorstr=#7FFFFFFF);
+            zoom: 1;
 
             font-size: 2em; text-shadow: 1px 1px 0 #ccc;
         }
