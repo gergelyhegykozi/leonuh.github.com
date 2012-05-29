@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="css/style.css" />
+	<script src="js/prefixfree.min.js"></script>
+	<script src="js/jquery-1.7.2.min.js"></script>
+	<!--[if lt IE 9]>
+		<script src="js/selectivizr.min.js"></script>
+		<script src="js/html5shiv.js"></script>
+	<![endif]-->
+	<title>CSS Solutions - @leonuh</title>
+</head>
+<body>
+    <h1>CSS Solutions - <a href="twitter.com/#!/leonuh" alt="Twitter">@leonuh</a> - page optimalized for ie7+</h1>
+
+    <div id="content">
+		<section>
+
+			<h2>Clearfix with hasLayout (ie6+)</h2>
+
+			<input id="btn_bug_clearfix" type="radio" name="clearfix" checked="checked" /><label for="btn_bug_clearfix">
+			Bug</label><input id="btn_solution_clearfix" type="radio" name="clearfix" /><label for="btn_solution_clearfix">
+			Solution</label><input id="btn_bugcode_clearfix" type="radio" name="clearfix" /><label for="btn_bugcode_clearfix">
+			Bug code</label><input id="btn_solutioncode_clearfix" type="radio" name="clearfix" /><label for="btn_solutioncode_clearfix">
+			Solution code</label>
+
+			<div>
+				<section>
+					<div style="background: #0000ff;">
+						<div style="background: #ff0000; float: left; height: 220px; width: 50%;">Inner Div 1</div>
+						<div style="background: #800080; float: left; height: 100px; width: 50%;">Inner Div 2</div>
+						Outer Div
+					</div>
+				</section>
+				<section>
+					<div style="background: #0000ff; overflow: auto; width: 100%;">
+						<div style="background: #ff0000; float: left; height: 220px; width: 50%;">Inner Div 1</div>
+						<div style="background: #800080; float: left; height: 100px; width: 50%;">Inner Div 2</div>
+						Outer Div
+					</div>
+				</section>
+				<section class="code">
+					<pre>
+&lt;div style=&quot;background: #0000ff;&quot;&gt;
+	&lt;div style=&quot;background: #ff0000; float: left; height: 220px; width: 50%;&quot;&gt;Inner Div 1&lt;/div&gt;
+	&lt;div style=&quot;background: #800080; float: left; height: 100px; width: 50%;&quot;&gt;Inner Div 2&lt;/div&gt;
+	Outer Div
+&lt;/div&gt;
+					</pre>
+				</section>
+				<section class="code">
+					<pre>
+&lt;div style=&quot;background: #0000ff; overflow: auto; width: 100%;&quot;&gt;
+	&lt;div style=&quot;background: #ff0000; float: left; height: 220px; width: 50%;&quot;&gt;Inner Div 1&lt;/div&gt;
+	&lt;div style=&quot;background: #800080; float: left; height: 100px; width: 50%;&quot;&gt;Inner Div 2&lt;/div&gt;
+	Outer Div
+&lt;/div&gt;
+					</pre>
+				</section>
+			</div>
+
+		</section><section>
+
+		    <h2>Double margin bug (on ie6)</h2>
+
+		    <input id="btn_bug_doublemargin" type="radio" name="doublemargin" checked="checked" /><label for="btn_bug_doublemargin">
+		    Bug</label><input id="btn_solution_doublemargin" type="radio" name="doublemargin" /><label for="btn_solution_doublemargin">
+		    Solution</label><input id="btn_bugcode_doublemargin" type="radio" name="doublemargin" /><label for="btn_bugcode_doublemargin">
+		    Bug code</label><input id="btn_solutioncode_doublemargin" type="radio" name="doublemargin" /><label for="btn_solutioncode_doublemargin">
+		    Solution code</label>
+
+		    <div>
+			    <section>
+				    <div style="background: #ff0000; float: left; height: 220px; width: 50%;">Floated Div 1</div>
+				    <div style="background: #800080; float: left; height: 220px; width: 50%;">Floated Div 2</div>
+			    </section>
+			    <section>
+				    <div style="background: #ff0000; display: inline; float: left; height: 220px; width: 50%;">Floated Div 1</div>
+				    <div style="background: #800080; display: inline; float: left; height: 220px; width: 50%;">Floated Div 2</div>
+			    </section>
+			    <section class="code">
+					<pre>
+&lt;div style=&quot;background: #ff0000; float: left; height: 220px; width: 50%;&quot;&gt;Floated Div 1&lt;/div&gt;
+&lt;div style=&quot;background: #800080; float: left; height: 220px; width: 50%;&quot;&gt;Floated Div 2&lt;/div&gt;
+					</pre>
+			    </section>
+			    <section class="code">
+					<pre>
+&lt;div style=&quot;background: #ff0000; display: inline; float: left; height: 220px; width: 50%;&quot;&gt;Floated Div 1&lt;/div&gt;
+&lt;div style=&quot;background: #800080; display: inline; float: left; height: 220px; width: 50%;&quot;&gt;Floated Div 2&lt;/div&gt;
+					</pre>
+			    </section>
+		    </div>
+
+	    </section><section>
+
+		    <h2>Min height bug (ie6-ie7)</h2>
+
+		    <input id="btn_bug_minheight" type="radio" name="minheight" checked="checked" /><label for="btn_bug_minheight">
+		    Bug</label><input id="btn_solution_minheight" type="radio" name="minheight" /><label for="btn_solution_minheight">
+		    Solution</label><input id="btn_bugcode_minheight" type="radio" name="minheight" /><label for="btn_bugcode_minheight">
+		    Bug code</label><input id="btn_solutioncode_minheight" type="radio" name="minheight" /><label for="btn_solutioncode_minheight">
+		    Solution code</label>
+
+		    <div>
+			    <section>
+				    <div style="background: #ff0000; min-height: 220px;">Div</div>
+			    </section>
+			    <section>
+				    <div style="background: #ff0000; min-height: 220px; height: auto !important; height: 220px; ">Div</div>
+			    </section>
+			    <section class="code">
+					<pre>
+&lt;div style=&quot;background: #ff0000; min-height: 220px;&quot;&gt;Div&lt;/div&gt;
+					</pre>
+			    </section>
+			    <section class="code">
+					<pre>
+&lt;div style=&quot;background: #ff0000; min-height: 220px; height: auto !important; height: 220px; &quot;&gt;Div&lt;/div&gt;
+					</pre>
+			    </section>
+		    </div>
+
+	    </section><section>
+
+			<h2>Rgba bug (ie6-ie8)</h2>
+
+			<input id="btn_bug_rgba" type="radio" name="rgba" checked="checked" /><label for="btn_bug_rgba">
+			Bug</label><input id="btn_solution_rgba" type="radio" name="rgba" /><label for="btn_solution_rgba">
+			Solution</label><input id="btn_bugcode_rgba" type="radio" name="rgba" /><label for="btn_bugcode_rgba">
+			Bug code</label><input id="btn_solutioncode_rgba" type="radio" name="rgba" /><label for="btn_solutioncode_rgba">
+			Solution code</label>
+
+			<div>
+				<section>
+					<div style="background: rgba(0, 0, 0, .5); height: 220px;">Div black with 50% alpha</div>
+				</section>
+				<section>
+					<div style="background: rgba(0, 0, 0, .5); height: 220px; -ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F000000,endColorstr=#7F000000); filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F000000,endColorstr=#7F000000); zoom: 1;">Div black with 50% alpha</div>
+				</section>
+				<section class="code">
+					<pre>
+&lt;div style=&quot;background: rgba(0, 0, 0, .5); height: 220px;&quot;&gt;Div black with 50% alpha&lt;/div&gt;
+					</pre>
+				</section>
+				<section class="code">
+					<pre>
+&lt;div style=&quot;background: rgba(0, 0, 0, .5); height: 220px; -ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F000000,endColorstr=#7F000000); filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F000000,endColorstr=#7F000000); zoom: 1;&quot;&gt;Div black with 50% alpha&lt;/div&gt;
+					</pre>
+				</section>
+			</div>
+
+		</section><section>
+
+		    <h2>Inline block margin bug vertical (on ie8+)</h2>
+
+		    <input id="btn_bug_inlineblockmarginv" type="radio" name="inlineblockmarginv" checked="checked" /><label for="btn_bug_inlineblockmarginv">
+		    Bug</label><input id="btn_solution_inlineblockmarginv" type="radio" name="inlineblockmarginv" /><label for="btn_solution_inlineblockmarginv">
+		    Solution</label><input id="btn_bugcode_inlineblockmarginv" type="radio" name="inlineblockmarginv" /><label for="btn_bugcode_inlineblockmarginv">
+		    Bug code</label><input id="btn_solutioncode_inlineblockmarginv" type="radio" name="inlineblockmarginv" /><label for="btn_solutioncode_inlineblockmarginv">
+		    Solution code</label>
+
+		    <div>
+			    <section>
+				    <div style="background: #ff0000; display: inline-block; height: 110px; width: 50%;">Div 1</div>
+				    <div style="background: #800080; display: inline-block; height: 110px; width: 50%;">Div 2</div>
+			    </section>
+			    <section>
+				    <div style="background: #ff0000; display: inline-block; height: 110px; width: 50%;">
+				    Div 1</div><div style="background: #800080; display: inline-block; height: 110px; width: 50%;">
+				    Div 2</div>
+			    </section>
+			    <section class="code">
+					<pre>
+&lt;div style=&quot;background: #ff0000; display: inline-block; height: 110px; width: 50%;&quot;&gt;Div 1&lt;/div&gt;
+&lt;div style=&quot;background: #800080; display: inline-block; height: 110px; width: 50%;&quot;&gt;Div 2&lt;/div&gt;
+					</pre>
+			    </section>
+			    <section class="code">
+					<pre>
+&lt;div style=&quot;background: #ff0000; display: inline-block; height: 110px; width: 50%;&quot;&gt;
+Div 1&lt;/div&gt;&lt;div style=&quot;background: #800080; display: inline-block; height: 110px; width: 50%;&quot;&gt;
+Div 2&lt;/div&gt;
+					</pre>
+			    </section>
+		    </div>
+
+		</section><section>
+
+			<h2>Inline block margin bug horizontal (on ie8+)</h2>
+
+			<input id="btn_bug_inlineblockmarginh" type="radio" name="inlineblockmarginh" checked="checked" /><label for="btn_bug_inlineblockmarginh">
+			Bug</label><input id="btn_solution_inlineblockmarginh" type="radio" name="inlineblockmarginh" /><label for="btn_solution_inlineblockmarginh">
+			Solution</label><input id="btn_bugcode_inlineblockmarginh" type="radio" name="inlineblockmarginh" /><label for="btn_bugcode_inlineblockmarginh">
+			Bug code</label><input id="btn_solutioncode_inlineblockmarginh" type="radio" name="inlineblockmarginh" /><label for="btn_solutioncode_inlineblockmarginh">
+			Solution code</label>
+
+			<div>
+				<section>
+					<div style="background: #ff0000; display: inline-block; width: 100%;">
+						Div 1
+						<div style="background: #800080; margin:50px 0;">Div 2</div>
+						Div 1
+					</div>
+					<div style="background: #ff0000; display: inline-block; width: 100%;">
+						Div 1
+						<div style="background: #800080; margin:50px 0;">Div 2</div>
+					</div>
+				</section>
+				<section>
+					<div style="background: #ff0000; display: inline-block; height: 110px; width: 100%;">
+						Div 1
+						<div style="background: #800080; display: inline-block; margin-top:20px; height: 110px; width: 100%;">Div 2</div>
+					</div>
+				</section>
+				<section class="code">
+					<pre>
+&lt;div style=&quot;background: #ff0000; display: inline-block; height: 110px; width: 50%;&quot;&gt;Div 1&lt;/div&gt;
+&lt;div style=&quot;background: #800080; display: inline-block; height: 110px; width: 50%;&quot;&gt;Div 2&lt;/div&gt;
+					</pre>
+				</section>
+				<section class="code">
+					<pre>
+&lt;div style=&quot;background: #ff0000; display: inline-block; height: 110px; width: 50%;&quot;&gt;
+Div 1&lt;/div&gt;&lt;div style=&quot;background: #800080; display: inline-block; height: 110px; width: 50%;&quot;&gt;
+Div 2&lt;/div&gt;
+					</pre>
+				</section>
+			</div>
+
+		</section><section>
+
+		    <h2>Inline block bug (ie6-ie7)</h2>
+
+		    <input id="btn_bug_inlineblock" type="radio" name="inlineblock" checked="checked" /><label for="btn_bug_inlineblock">
+		    Bug</label><input id="btn_solution_inlineblock" type="radio" name="inlineblock" /><label for="btn_solution_inlineblock">
+		    Solution</label><input id="btn_bugcode_inlineblock" type="radio" name="inlineblock" /><label for="btn_bugcode_inlineblock">
+		    Bug code</label><input id="btn_solutioncode_inlineblock" type="radio" name="inlineblock" /><label for="btn_solutioncode_inlineblock">
+		    Solution code</label>
+
+		    <div>
+			    <section>
+				    <div style="background: #ff0000; display: inline-block; height: 220px;">
+				    Div 1</div><div style="background: #800080; display: inline-block; height: 220px;">
+				    Div 2</div>
+			    </section>
+			    <section>
+				    <div style="background: #ff0000; display: inline-block; zoom: 1; *display: inline; height: 220px; vertical-align: top;">
+					Div 1</div><div style="background: #800080; display: inline-block; zoom: 1; *display: inline; height: 220px; vertical-align: top;">
+				    Div 2</div>
+			    </section>
+			    <section class="code">
+					<pre>
+&lt;div style=&quot;background: #ff0000; display: inline-block; height: 220px;&quot;&gt;
+Div 1&lt;/div&gt;&lt;div style=&quot;background: #800080; display: inline-block; height: 220px;&quot;&gt;
+Div 2&lt;/div&gt;
+					</pre>
+			    </section>
+			    <section class="code">
+					<pre>
+&lt;div style=&quot;background: #ff0000; display: inline-block; zoom: 1; *display: inline; height: 220px;&quot;&gt;
+Div 1&lt;/div&gt;&lt;div style=&quot;background: #800080; display: inline-block; zoom: 1; *display: inline; height: 220px;&quot;&gt;
+Div 2&lt;/div&gt;
+					</pre>
+			    </section>
+		    </div>
+
+	    </section>
+
+
+    </div>
+</body>
+</html>                                                                                                                                                                                    `
