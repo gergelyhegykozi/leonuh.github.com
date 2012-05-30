@@ -99,11 +99,11 @@ h1 {
         }
 
         #content > section > div {
-            border: 1px solid #000; border-top: 0; background: rgba(255, 255, 255, .8); height: 240px; overflow: auto; position: relative;
+            border: 1px solid #000; border-top: 0; background: rgba(255, 255, 255, .8); height: 240px; overflow: position: relative;
             filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#CCFFFFFF,endColorstr=#CCFFFFFF);
             zoom: 1;
         }
-            #content > section > div > section { height: 100%; left: 0; filter: alpha(opacity=0); opacity: 0; overflow: auto; padding: 10px; position: absolute; top: 0; transition: .5s all; z-index: 1; width: 100%; }
+            #content > section > div > section { height: 90%; left: 0; filter: alpha(opacity=0); opacity: 0; overflow: auto; padding: 10px; position: absolute; top: 0; transition: .5s all; z-index: 1; width: 100%; }
             #content > section > input:checked + label {
                 background: rgba(255, 255, 255, .8); border-bottom: 1px solid transparent;
                 filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#CCFFFFFF,endColorstr=#CCFFFFFF);
