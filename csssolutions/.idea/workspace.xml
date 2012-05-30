@@ -22,19 +22,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="12" selection-start="582" selection-end="582" vertical-scroll-proportion="0.0">
+            <state line="72" column="129" selection-start="2091" selection-end="2091" vertical-scroll-proportion="0.07467532">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ie.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ie.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/ie.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="930" column="17" selection-start="54731" selection-end="54731" vertical-scroll-proportion="0.30194804">
+            <state line="930" column="17" selection-start="54731" selection-end="54731" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -76,9 +76,9 @@
         <option value="$PROJECT_DIR$/js/prototype.js" />
         <option value="$PROJECT_DIR$/js/selectivizr.min.js" />
         <option value="$PROJECT_DIR$/js/boxsizing.htc" />
-        <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/ie.js" />
+        <option value="$PROJECT_DIR$/css/style.css" />
       </list>
     </option>
   </component>
@@ -312,13 +312,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="12" selection-start="582" selection-end="582" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="21" selection-start="142" selection-end="142" vertical-scroll-proportion="-3.125">
@@ -328,10 +321,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/ie.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="930" column="17" selection-start="54731" selection-end="54731" vertical-scroll-proportion="0.30194804">
+        <state line="930" column="17" selection-start="54731" selection-end="54731" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="72" column="129" selection-start="2091" selection-end="2091" vertical-scroll-proportion="0.07467532">
+          <folding />
         </state>
       </provider>
     </entry>
