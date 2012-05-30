@@ -34,8 +34,10 @@
       <file leaf-file-name="ie.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/ie.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="858" column="9" selection-start="52253" selection-end="52253" vertical-scroll-proportion="0.9025974">
-              <folding />
+            <state line="1110" column="166" selection-start="61148" selection-end="61148" vertical-scroll-proportion="0.41558442">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -326,8 +328,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/ie.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="858" column="9" selection-start="52253" selection-end="52253" vertical-scroll-proportion="0.9025974">
-          <folding />
+        <state line="1110" column="166" selection-start="61148" selection-end="61148" vertical-scroll-proportion="0.41558442">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
