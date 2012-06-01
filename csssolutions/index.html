@@ -193,7 +193,7 @@ Div 2&lt;/div&gt;
 
 	    </section><section>
 
-			<h2>Rgba background crossbrowser</h2>
+			<h2>Rgba background crossbrowser (ie6+)</h2>
 
 			<input id="btn_solution_rgba" type="radio" name="rgba" checked="checked" /><label for="btn_solution_rgba">
 			Solution</label><input id="btn_solutioncode_rgba" type="radio" name="rgba" /><label for="btn_solutioncode_rgba">
@@ -206,6 +206,52 @@ Div 2&lt;/div&gt;
 				<section class="code">
 					<pre>
 &lt;div style=&quot;background: rgba(0, 0, 0, .5); height: 220px; -ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F000000,endColorstr=#7F000000); filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F000000,endColorstr=#7F000000); zoom: 1;&quot;&gt;Div black with 50% alpha&lt;/div&gt;
+					</pre>
+				</section>
+			</div>
+
+		</section><section>
+
+			<h2>Opacity crossbrowser (ie6+)</h2>
+
+			<input id="btn_solution_opacity" type="radio" name="opacity" checked="checked" /><label for="btn_solution_opacity">
+			Solution</label><input id="btn_solutioncode_opacity" type="radio" name="opacity" /><label for="btn_solutioncode_opacity">
+			Solution code</label>
+
+			<div>
+				<section>
+					<div style="background: #ff0000; alpha(opacity=50); opacity: 0.5;">Div with 50% opacity</div>
+				</section>
+				<section class="code">
+					<pre>
+&lt;div style=&quot;background: #ff0000; alpha(opacity=50); opacity: 0.5;&quot;&gt;Div with 50% opacity&lt;/div&gt;
+					</pre>
+				</section>
+			</div>
+
+		</section><section>
+
+			<h2>Vertical align crossbrowser (ie6+)</h2>
+
+			<input id="btn_solution_valign" type="radio" name="valign" checked="checked" /><label for="btn_solution_valign">
+			Solution</label><input id="btn_solutioncode_valign" type="radio" name="valign" /><label for="btn_solutioncode_valign">
+			Solution code</label>
+
+			<div>
+				<section>
+					<div style="background: #0000ff; height: 220px; position: relative;">
+						<div style="position: absolute; top: 50%;">
+							<div style="background:#ff0000; margin-top:-25%;">Middle div</div>
+						</div>
+					</div>
+				</section>
+				<section class="code">
+					<pre>
+&lt;div style=&quot;background: #0000ff; height: 220px; position: relative;&quot;&gt;
+	&lt;div style=&quot;position: absolute; top: 50%;&quot;&gt;
+		&lt;div style=&quot;background:#ff0000; margin-top:-25%;&quot;&gt;Middle div&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
 					</pre>
 				</section>
 			</div>
