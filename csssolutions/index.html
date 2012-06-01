@@ -121,35 +121,6 @@
 
 	    </section><section>
 
-			<h2>Rgba bug (ie6-ie8)</h2>
-
-			<input id="btn_bug_rgba" type="radio" name="rgba" checked="checked" /><label for="btn_bug_rgba">
-			Bug</label><input id="btn_solution_rgba" type="radio" name="rgba" /><label for="btn_solution_rgba">
-			Solution</label><input id="btn_bugcode_rgba" type="radio" name="rgba" /><label for="btn_bugcode_rgba">
-			Bug code</label><input id="btn_solutioncode_rgba" type="radio" name="rgba" /><label for="btn_solutioncode_rgba">
-			Solution code</label>
-
-			<div>
-				<section>
-					<div style="background: rgba(0, 0, 0, .5); height: 220px;">Div black with 50% alpha</div>
-				</section>
-				<section>
-					<div style="background: rgba(0, 0, 0, .5); height: 220px; -ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F000000,endColorstr=#7F000000); filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F000000,endColorstr=#7F000000); zoom: 1;">Div black with 50% alpha</div>
-				</section>
-				<section class="code">
-					<pre>
-&lt;div style=&quot;background: rgba(0, 0, 0, .5); height: 220px;&quot;&gt;Div black with 50% alpha&lt;/div&gt;
-					</pre>
-				</section>
-				<section class="code">
-					<pre>
-&lt;div style=&quot;background: rgba(0, 0, 0, .5); height: 220px; -ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F000000,endColorstr=#7F000000); filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F000000,endColorstr=#7F000000); zoom: 1;&quot;&gt;Div black with 50% alpha&lt;/div&gt;
-					</pre>
-				</section>
-			</div>
-
-		</section><section>
-
 		    <h2>Inline block margin bug vertical (on ie8+)</h2>
 
 		    <input id="btn_bug_inlineblockmarginv" type="radio" name="inlineblockmarginv" checked="checked" /><label for="btn_bug_inlineblockmarginv">
@@ -220,7 +191,26 @@ Div 2&lt;/div&gt;
 			    </section>
 		    </div>
 
-	    </section>
+	    </section><section>
+
+			<h2>Rgba background crossbrowser</h2>
+
+			<input id="btn_solution_rgba" type="radio" name="rgba" checked="checked" /><label for="btn_solution_rgba">
+			Solution</label><input id="btn_solutioncode_rgba" type="radio" name="rgba" /><label for="btn_solutioncode_rgba">
+			Solution code</label>
+
+			<div>
+				<section>
+					<div style="background: rgba(0, 0, 0, .5); height: 220px; -ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F000000,endColorstr=#7F000000); filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F000000,endColorstr=#7F000000); zoom: 1;">Div black with 50% alpha</div>
+				</section>
+				<section class="code">
+					<pre>
+&lt;div style=&quot;background: rgba(0, 0, 0, .5); height: 220px; -ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F000000,endColorstr=#7F000000); filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F000000,endColorstr=#7F000000); zoom: 1;&quot;&gt;Div black with 50% alpha&lt;/div&gt;
+					</pre>
+				</section>
+			</div>
+
+		</section>
     </div>
 </body>
 </html>                                                                                                                                                                                    `
