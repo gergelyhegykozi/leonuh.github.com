@@ -231,17 +231,24 @@ Div 2&lt;/div&gt;
 
 		</section><section>
 
-			<h2>Vertical align crossbrowser (ie6+)</h2>
+			<h2>Vertical align center anything crossbrowser (3 elements) (ie6+)</h2>
 
-			<input id="btn_solution_valign" type="radio" name="valign" checked="checked" /><label for="btn_solution_valign">
-			Solution</label><input id="btn_solutioncode_valign" type="radio" name="valign" /><label for="btn_solutioncode_valign">
+			<input id="btn_solution_valign1" type="radio" name="valign1" checked="checked" /><label for="btn_solution_valign1">
+			Solution</label><input id="btn_solutioncode_valign1" type="radio" name="valign1" /><label for="btn_solutioncode_valign1">
 			Solution code</label>
 
 			<div>
 				<section>
-					<div style="background: #0000ff; height: 220px; position: relative;">
-						<div style="position: absolute; top: 50%;">
-							<div style="background:#ff0000; margin-top: -25%; *margin-top: 0; top: -50%; position: relative;">Middle div</div>
+					<div style="background: #0000ff; height: 220px; display: table; *position: relative; width: 100%;">
+						<div style="display: table-cell; vertical-align: middle; *position: absolute; *top: 50%;">
+							<div style="background:#ff0000; *top: -50%; *position: relative;">
+								<div>Middle div</div>
+								<div>Middle div</div>
+								<div>Middle div</div>
+								<div>Middle div</div>
+								<div>Middle div</div>
+								<div>Middle div</div>
+							</div>
 						</div>
 					</div>
 				</section>
@@ -249,7 +256,30 @@ Div 2&lt;/div&gt;
 					<pre>
 &lt;div style=&quot;background: #0000ff; height: 220px; position: relative;&quot;&gt;
 	&lt;div style=&quot;position: absolute; top: 50%;&quot;&gt;
-		&lt;div style=&quot;background:#ff0000; margin-top:-25%;&quot;&gt;Middle div&lt;/div&gt;
+		&lt;div style=&quot;background:#ff0000; margin-top: -25%; *margin-top: 0; top: -50%; position: relative;&quot;&gt;Middle div&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+					</pre>
+				</section>
+			</div>
+
+		</section><section>
+
+			<h2>Vertical align center 1 line crossbrowser (ie6+)</h2>
+
+			<input id="btn_solution_valign2" type="radio" name="valign2" checked="checked" /><label for="btn_solution_valign2">
+			Solution</label><input id="btn_solutioncode_valign2" type="radio" name="valign2" /><label for="btn_solutioncode_valign2">
+			Solution code</label>
+
+			<div>
+				<section>
+					<div style="background: #ff0000; height: 220px; line-height: 220px;">Middle text</div>
+				</section>
+				<section class="code">
+					<pre>
+&lt;div style=&quot;background: #0000ff; height: 220px; position: relative;&quot;&gt;
+	&lt;div style=&quot;position: absolute; top: 50%;&quot;&gt;
+		&lt;div style=&quot;background:#ff0000; margin-top: -25%; *margin-top: 0; top: -50%; position: relative;&quot;&gt;Middle div&lt;/div&gt;
 	&lt;/div&gt;
 &lt;/div&gt;
 					</pre>
