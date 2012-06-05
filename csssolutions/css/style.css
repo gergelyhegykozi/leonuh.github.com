@@ -128,3 +128,10 @@ h1 {
 @media screen and (max-width: 850px) {
     #content > section { margin-right: 0; width: 95%; }
 }
+
+/* SMALL MEDIA */
+@media screen and (max-width: 500px) {
+    body { font-size: 40%; }
+    #content > section { padding: 5px; }
+    #content > section > label { padding: 10px 3px; }
+}

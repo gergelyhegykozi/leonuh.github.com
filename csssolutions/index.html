@@ -9,7 +9,7 @@
 	<title>CSS Solutions - @leonuh</title>
 </head>
 <body>
-    <h1>CSS Solutions - <a href="http://twitter.com/#!/leonuh" alt="Twitter">@leonuh</a> - page optimalized for ie7+</h1>
+    <h1>CSS Solutions - <a href="http://twitter.com/#!/leonuh" alt="Twitter">@leonuh</a> - responsive page optimalized for ie7+</h1>
 
     <div id="content">
 		<section>
@@ -201,11 +201,11 @@ Div 2&lt;/div&gt;
 
 			<div>
 				<section>
-					<div style="background: rgba(0, 0, 0, .5); height: 220px; -ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F000000,endColorstr=#7F000000); filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F000000,endColorstr=#7F000000); zoom: 1;">Div black with 50% alpha</div>
+					<div style="background: rgba(0, 0, 0, .5); height: 220px; filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F000000,endColorstr=#7F000000); zoom: 1;">Div black with 50% alpha</div>
 				</section>
 				<section class="code">
 					<pre>
-&lt;div style=&quot;background: rgba(0, 0, 0, .5); height: 220px; -ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F000000,endColorstr=#7F000000); filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F000000,endColorstr=#7F000000); zoom: 1;&quot;&gt;Div black with 50% alpha&lt;/div&gt;
+&lt;div style=&quot;background: rgba(0, 0, 0, .5); height: 220px; filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F000000,endColorstr=#7F000000); zoom: 1;&quot;&gt;Div black with 50% alpha&lt;/div&gt;
 					</pre>
 				</section>
 			</div>
@@ -220,11 +220,11 @@ Div 2&lt;/div&gt;
 
 			<div>
 				<section>
-					<div style="background: #ff0000; alpha(opacity=50); opacity: 0.5;">Div with 50% opacity</div>
+					<div style="background: #ff0000; filter:alpha(opacity=50); opacity: 0.5;">Div with 50% opacity</div>
 				</section>
 				<section class="code">
 					<pre>
-&lt;div style=&quot;background: #ff0000; alpha(opacity=50); opacity: 0.5;&quot;&gt;Div with 50% opacity&lt;/div&gt;
+&lt;div style=&quot;background: #ff0000; filter:alpha(opacity=50); opacity: 0.5;&quot;&gt;Div with 50% opacity&lt;/div&gt;
 					</pre>
 				</section>
 			</div>
@@ -241,15 +241,15 @@ Div 2&lt;/div&gt;
 				<section>
 					<div style="background: #0000ff; height: 220px; display: table; *position: relative; width: 100%;">
 						<div style="display: table-cell; vertical-align: middle; *position: absolute; *top: 50%;">
-							<div style="background:#ff0000; height: 100px; *top: -50%; *position: relative; width: 100%">Middle div</div>
+							<div style="background:#ff0000; *top: -50%; *position: relative; width: 100%">Middle div</div>
 						</div>
 					</div>
 				</section>
 				<section class="code">
 					<pre>
-&lt;div style=&quot;background: #0000ff; height: 220px; position: relative;&quot;&gt;
-	&lt;div style=&quot;position: absolute; top: 50%;&quot;&gt;
-		&lt;div style=&quot;background:#ff0000; margin-top: -25%; *margin-top: 0; top: -50%; position: relative;&quot;&gt;Middle div&lt;/div&gt;
+&lt;div style=&quot;background: #0000ff; height: 220px; display: table; *position: relative; width: 100%;&quot;&gt;
+	&lt;div style=&quot;display: table-cell; vertical-align: middle; *position: absolute; *top: 50%;&quot;&gt;
+		&lt;div style=&quot;background:#ff0000; *top: -50%; *position: relative; width: 100%&quot;&gt;Middle div&lt;/div&gt;
 	&lt;/div&gt;
 &lt;/div&gt;
 					</pre>
@@ -270,11 +270,7 @@ Div 2&lt;/div&gt;
 				</section>
 				<section class="code">
 					<pre>
-&lt;div style=&quot;background: #0000ff; height: 220px; position: relative;&quot;&gt;
-	&lt;div style=&quot;position: absolute; top: 50%;&quot;&gt;
-		&lt;div style=&quot;background:#ff0000; margin-top: -25%; *margin-top: 0; top: -50%; position: relative;&quot;&gt;Middle div&lt;/div&gt;
-	&lt;/div&gt;
-&lt;/div&gt;
+&lt;div style=&quot;background: #ff0000; height: 220px; line-height: 220px;&quot;&gt;Middle text&lt;/div&gt;
 					</pre>
 				</section>
 			</div>
